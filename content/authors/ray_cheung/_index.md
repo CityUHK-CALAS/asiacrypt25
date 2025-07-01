@@ -1,6 +1,6 @@
 ---
 # Display name
-title: Ray Cheung
+title: Ray C. C. Cheung
 
 # Role/position
 role: |
