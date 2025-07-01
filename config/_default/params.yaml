@@ -1,0 +1,70 @@
+# SITE SETUP
+# Guide: https://docs.hugoblox.com/tutorial/
+# Documentation: https://docs.hugoblox.com/
+# This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
+
+# Appearance
+appearance:
+  mode: light
+  color: indigo
+
+# SEO
+marketing:
+  seo:
+    site_type: Organization
+    local_business_type: ''
+    org_name: ''
+    description: 'A highly-customizable Hugo conference theme powered by Hugo Blox website builder.'
+    twitter: 'GetResearchDev'
+  analytics:
+    google_analytics: ''
+    baidu_tongji: ''
+    plausible: ''
+    fathom: ''
+    pirsch: ''
+  verification:
+    google: ''
+    baidu: ''
+
+# Site header
+header:
+  navbar:
+    enable: true
+    blox: "navbar"
+    align: "center"
+    fixed_to_top: true
+    logo:
+      text: ""
+      # Logo filename in `assets/media/` folder
+      filename: "icon.png"
+    button:
+      enable: true
+      text: "Register Now"
+      url: "https://asiacrypt.iacr.org/2025/registration.php"
+    show_search: false
+    show_theme_chooser: false
+
+# Site footer
+footer:
+  blox: "sitemap"
+  content:
+    logo:
+      text: "Asiacrypt 2025 Workshop"
+    tagline: "Secure Post-Quantum Cryptography RISC-V IoT Platform Implementation and Demonstration on FPGA"
+  design:
+    columns: 1
+  copyright:
+    notice: '© {year} CALAS'
+
+# Localization
+locale:
+  date_format: 'Jan 2, 2006'
+  time_format: '3:04 PM'
+
+# Extensions
+extensions:
+  convertkit:
+    # To use the ConvertKit Newsletter blox, provide your public API Key from your ConvertKit account settings page
+    api_key: ""
+
+i_am_a_sponsor: true

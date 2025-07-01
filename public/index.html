@@ -1,0 +1,1940 @@
+<!doctype html>
+<!-- This site was created with Hugo Blox. https://hugoblox.com -->
+<!-- Last Published: July 1, 2025 --><html lang="en-us" dir="ltr"
+      data-wc-theme-default="light">
+  
+<head><script src="/asiacrypt25/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=asiacrypt25/livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="Hugo Blox Builder 0.3.1" />
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+  
+  
+    
+  
+  <meta name="description" content="A highly-customizable Hugo conference theme powered by Hugo Blox website builder." />
+
+  
+  <link rel="alternate" hreflang="en-us" href="http://localhost:1313/asiacrypt25/" />
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="/asiacrypt25/css/themes/indigo.min.css" />
+  
+
+  
+  
+    
+    <link href="/asiacrypt25/dist/wc.min.css" rel="stylesheet" />
+  
+
+  
+  
+  
+
+  
+
+  <script>
+     
+    window.hbb = {
+       defaultTheme: document.documentElement.dataset.wcThemeDefault,
+       setDarkTheme: () => {
+        document.documentElement.classList.add("dark");
+        document.documentElement.style.colorScheme = "dark";
+      },
+       setLightTheme: () => {
+        document.documentElement.classList.remove("dark");
+        document.documentElement.style.colorScheme = "light";
+      }
+    }
+
+    console.debug(`Default Hugo Blox Builder theme is ${window.hbb.defaultTheme}`);
+
+    if ("wc-color-theme" in localStorage) {
+      localStorage.getItem("wc-color-theme") === "dark" ? window.hbb.setDarkTheme() : window.hbb.setLightTheme();
+    } else {
+      window.hbb.defaultTheme === "dark" ? window.hbb.setDarkTheme() : window.hbb.setLightTheme();
+      if (window.hbb.defaultTheme === "system") {
+        window.matchMedia("(prefers-color-scheme: dark)").matches ? window.hbb.setDarkTheme() : window.hbb.setLightTheme();
+      }
+    }
+  </script>
+
+  <script>
+    
+    document.addEventListener('DOMContentLoaded', function () {
+      
+      let checkboxes = document.querySelectorAll('li input[type=\'checkbox\'][disabled]');
+      checkboxes.forEach(e => {
+        e.parentElement.parentElement.classList.add('task-list');
+      });
+
+      
+      const liNodes = document.querySelectorAll('.task-list li');
+      liNodes.forEach(nodes => {
+        let textNodes = Array.from(nodes.childNodes).filter(node => node.nodeType === 3 && node.textContent.trim().length > 1);
+        if (textNodes.length > 0) {
+          const span = document.createElement('label');
+          textNodes[0].after(span);  
+          span.appendChild(nodes.querySelector('input[type=\'checkbox\']'));
+          span.appendChild(textNodes[0]);
+        }
+      });
+    });
+  </script>
+
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <link rel="alternate" href="/asiacrypt25/index.xml" type="application/rss+xml" title="The 1st Workshop on Secure Post-Quantum Cryptography RISC-V IoT Platform Implementation and Demonstration on FPGA" />
+  
+
+  
+  <link rel="icon" type="image/png" href="/asiacrypt25/media/icon_hu3643076037699016373.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/asiacrypt25/media/icon_hu13058186806395568447.png" />
+
+  <link rel="canonical" href="http://localhost:1313/asiacrypt25/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary" />
+  
+    <meta property="twitter:site" content="@GetResearchDev" />
+    <meta property="twitter:creator" content="@GetResearchDev" />
+  
+  <meta property="og:site_name" content="The 1st Workshop on Secure Post-Quantum Cryptography RISC-V IoT Platform Implementation and Demonstration on FPGA" />
+  <meta property="og:url" content="http://localhost:1313/asiacrypt25/" />
+  <meta property="og:title" content="Home | The 1st Workshop on Secure Post-Quantum Cryptography RISC-V IoT Platform Implementation and Demonstration on FPGA" />
+  <meta property="og:description" content="A highly-customizable Hugo conference theme powered by Hugo Blox website builder." /><meta property="og:image" content="http://localhost:1313/asiacrypt25/media/icon_hu11514252855341592005.png" />
+    <meta property="twitter:image" content="http://localhost:1313/asiacrypt25/media/icon_hu11514252855341592005.png" /><meta property="og:locale" content="en-us" />
+  
+    
+      <meta property="og:updated_time" content="2023-10-24T00:00:00&#43;00:00" />
+    
+  
+
+  
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite","url": "http://localhost:1313/asiacrypt25/"
+}
+</script>
+
+
+  
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "http://localhost:1313/asiacrypt25/",
+  "name": "The 1st Workshop on Secure Post-Quantum Cryptography RISC-V IoT Platform Implementation and Demonstration on FPGA",
+  "logo": "http://localhost:1313/asiacrypt25/media/icon_hu16194083095692259465.png",
+  
+  
+  
+  
+  "url": "http://localhost:1313/asiacrypt25/"
+}
+</script>
+
+  
+
+
+  <title>Home | The 1st Workshop on Secure Post-Quantum Cryptography RISC-V IoT Platform Implementation and Demonstration on FPGA</title>
+
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <style>
+    @font-face {
+      font-family: 'Inter var';
+      font-style: normal;
+      font-weight: 100 900;
+      font-display: swap;
+      src: url(/asiacrypt25/dist/font/Inter.var.woff2) format(woff2);
+    }
+  </style>
+
+  
+
+  
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        
+        
+      
+    
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        
+        
+          
+          
+          
+          
+
+
+
+
+        
+      
+    
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        
+        
+      
+    
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        
+        
+      
+    
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        
+        
+      
+    
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        
+        
+      
+    
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        
+        
+      
+    
+  
+  
+  
+  
+
+  
+  
+  <script src="/asiacrypt25/dist/lib/alpinejs/cdn.min.fb9b146b7fbd1bbf251fb3ef464f2e7c5d33a4a83aeb0fcf21e92ca6a9558c4b.js" integrity="sha256-&#43;5sUa3&#43;9G78lH7PvRk8ufF0zpKg66w/PIekspqlVjEs=" defer></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  <script
+    defer
+    src="/asiacrypt25/js/hugo-blox-en.min.js"
+    integrity=""
+  ></script>
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+  <body class="dark:bg-hb-dark dark:text-white page-wrapper" id="top">
+    <div id="page-bg"></div>
+    <div class="page-header sticky top-0 z-30">
+      
+      
+      
+        
+        
+        
+          <header id="site-header" class="header">
+  <nav class="navbar px-3 flex justify-left">
+    <div class="order-0 h-100">
+      
+      <a class="navbar-brand" href="/asiacrypt25/" title="The 1st Workshop on Secure Post-Quantum Cryptography RISC-V IoT Platform Implementation and Demonstration on FPGA">
+            
+            
+              
+              <img
+                fetchpriority="high"
+                decoding="async"
+                class=""
+                width="36"
+                height="36"
+                src="/asiacrypt25/media/icon_hu18237928042123142844.webp"
+                alt="The 1st Workshop on Secure Post-Quantum Cryptography RISC-V IoT Platform Implementation and Demonstration on FPGA" />
+            
+          
+        
+        
+      </a>
+    </div>
+    
+    <input id="nav-toggle" type="checkbox" class="hidden" />
+    <label
+      for="nav-toggle"
+      class="order-3 cursor-pointer flex items-center lg:hidden text-dark dark:text-white lg:order-1">
+      <svg id="show-button" class="h-6 fill-current block" viewBox="0 0 20 20">
+        <title>Open Menu</title>
+        <path d="M0 3h20v2H0V3z m0 6h20v2H0V9z m0 6h20v2H0V0z"></path>
+      </svg>
+      <svg id="hide-button" class="h-6 fill-current hidden" viewBox="0 0 20 20">
+        <title>Close Menu</title>
+        <polygon
+          points="11 9 22 9 22 11 11 11 11 22 9 22 9 11 -2 11 -2 9 9 9 9 -2 11 -2"
+          transform="rotate(45 10 10)"></polygon>
+      </svg>
+    </label>
+    
+
+    
+    
+    <ul
+      id="nav-menu"
+      class="navbar-nav order-3 hidden lg:flex w-full pb-6 lg:order-1 lg:w-auto lg:space-x-2 lg:pb-0 xl:space-x-8 justify-left
+      ">
+      
+      
+      
+      
+      
+      
+      <li class="nav-item">
+        <a
+          class="nav-link "
+          
+          href="/asiacrypt25/#top"
+        >Home</a
+        >
+      </li>
+      
+      
+      
+      
+      
+      
+      <li class="nav-item">
+        <a
+          class="nav-link "
+          
+          href="/asiacrypt25/#about"
+        >About</a
+        >
+      </li>
+      
+      
+      
+      
+      
+      
+      <li class="nav-item">
+        <a
+          class="nav-link "
+          
+          href="/asiacrypt25/#speakers"
+        >Speakers</a
+        >
+      </li>
+      
+      
+      
+      
+      
+      
+      <li class="nav-item">
+        <a
+          class="nav-link "
+          
+          href="/asiacrypt25/#agenda"
+        >Agenda</a
+        >
+      </li>
+      
+      
+      
+      <li class="mt-4 inline-block lg:hidden">
+        <a
+          class=""
+          href="https://asiacrypt.iacr.org/2025/registration.php">
+          Register Now
+        </a>
+      </li>
+      
+    </ul>
+
+    <div class="order-1 ml-auto flex items-center md:order-2 lg:ml-0">
+
+      
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+      <a
+        href="https://asiacrypt.iacr.org/2025/registration.php"
+        class="inline-block rounded border px-5 py-2 font-semibold transition
+        md:ml-4 px-4 py-1.5 text-sm
+        border-black  hover:bg-black dark:hover:bg-white dark:hover:text-black hover:text-white dark:border-white dark:text-white dark:hover:bg-white
+        hidden lg:inline-block">
+        Register Now
+      </a>
+      
+    </div>
+  </nav>
+</header>
+
+
+
+        
+      
+    </div>
+    <div class="page-body ">
+      
+
+  
+  
+    
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="section-hero-with-stats" class="relative hbb-section blox-hero-with-stats  bg-gradient-to-r from-rose-100 to-teal-100" style="padding: 0 0 0 0;" >
+ <div class="home-section-bg " >
+   
+ </div>
+  
+
+  
+
+    
+
+
+
+
+
+
+
+<div class="relative py-20 sm:pb-24 sm:pt-36">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">
+    <div class="mx-auto max-w-2xl lg:max-w-4xl lg:px-12">
+    
+      <h1
+        class="font-display text-5xl font-bold tracking-tighter text-primary-600 sm:text-7xl">
+        Asiacrypt 2025 Workshop
+      </h1>
+    
+    
+    <div class="mt-6 space-y-6 font-display text-2xl tracking-tight text-primary-900">
+      <strong>Secure Post-Quantum Cryptography RISC-V IoT Platform Implementation and Demonstration on FPGA</strong>
+    </div>
+    
+      
+      <div class="mt-6 space-y-6 font-display text-2xl tracking-tight text-black">
+        December 8th, 2025
+      </div>
+      
+
+      
+      
+      
+      
+        
+      
+      
+      <a
+        class="inline-flex justify-center rounded-2xl bg-primary-600 p-4 text-base font-semibold text-white hover:bg-primary-500 focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-500 active:text-white/70 mt-10 w-full" href="https://asiacrypt.iacr.org/2025/registration.php" target="_blank" rel="noopener">
+        <div>
+        Register Now
+        
+      </div>
+      </a>
+      
+      <dl
+        class="mt-10 grid grid-cols-2 gap-x-10 gap-y-6 sm:mt-16 sm:gap-x-16 sm:gap-y-10 sm:text-center lg:auto-cols-auto lg:grid-flow-col lg:grid-cols-none lg:justify-start lg:text-left">
+        
+        <div>
+          <dt class="font-mono text-sm text-primary-600">Speakers</dt>
+          <dd class="mt-0.5 text-2xl font-semibold tracking-tight text-primary-900">TBD</dd>
+        </div>
+        
+        <div>
+          <dt class="font-mono text-sm text-primary-600">Attendees</dt>
+          <dd class="mt-0.5 text-2xl font-semibold tracking-tight text-primary-900">TBD</dd>
+        </div>
+        
+        <div>
+          <dt class="font-mono text-sm text-primary-600">Venue</dt>
+          <dd class="mt-0.5 text-2xl font-semibold tracking-tight text-primary-900">Woodside Building, Clayton Campus of Monash University</dd>
+        </div>
+        
+        <div>
+          <dt class="font-mono text-sm text-primary-600">Location</dt>
+          <dd class="mt-0.5 text-2xl font-semibold tracking-tight text-primary-900">Melbourne, Australia</dd>
+        </div>
+        
+      </dl>
+    </div>
+  </div>
+</div>
+
+
+  
+
+  
+</section>
+
+  
+
+  
+  
+    
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="section-countdown" class="relative hbb-section blox-countdown  bg-primary-500" style="padding: 1rem 0 1rem 0;" >
+ <div class="home-section-bg " >
+   
+ </div>
+  
+
+  
+
+    
+
+
+
+
+
+
+
+
+
+<div class="min-w-screen flex items-center justify-center px-5 py-5" x-data="countdownTimer()" x-init="start()" id="countdown" data-countdown-date="2025-12-08T04:00:00.000Z">
+  <div class="text-primary-100">
+    
+    <h1 class="text-3xl text-center mb-3 font-extralight">Event Countdown</h1>
+    
+    
+    <div class="text-6xl text-center flex w-full items-center justify-center">
+      <div class="text-2xl mr-1 font-extralight"></div>
+      <div class="w-23 mx-1 p-2 bg-white text-primary-500 rounded-lg">
+        <div class="font-mono leading-none" x-text="days">00</div>
+        <div class="font-mono uppercase text-sm leading-none">Days</div>
+      </div>
+      <div class="w-23 mx-1 p-2 bg-white text-primary-500 rounded-lg">
+        <div class="font-mono leading-none" x-text="hours">00</div>
+        <div class="font-mono uppercase text-sm leading-none">Hours</div>
+      </div>
+      <div class="w-23 mx-1 p-2 bg-white text-primary-500 rounded-lg">
+        <div class="font-mono leading-none" x-text="minutes">00</div>
+        <div class="font-mono uppercase text-sm leading-none">Minutes</div>
+      </div>
+      <div class="w-23 mx-1 p-2 bg-white text-primary-500 rounded-lg">
+        <div class="font-mono leading-none" x-text="seconds">00</div>
+        <div class="font-mono uppercase text-sm leading-none">Seconds</div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<script>
+  
+  function countdownTimer() {
+    const el = document.querySelector('#countdown');
+    let targetISO = el.dataset.countdownDate;
+
+    
+    if (targetISO === '2000-01-01T00:00:00.000Z') {
+      targetISO = new Date(Date.now() + 7 * 864e5).toISOString();
+    }
+
+    const eventTime = new Date(targetISO).getTime();   
+    const day      = 864e5;                            
+
+    return {
+      days: '00', hours: '00', minutes: '00', seconds: '00',
+      countdown: null,
+
+      start() {
+        this.update();                                 
+        this.countdown = setInterval(this.update.bind(this), 1000);
+      },
+
+      update() {
+        const distance = eventTime - Date.now();
+        if (distance <= 0) return this.stop();
+
+        this.days    = this.pad(Math.max(0, Math.floor(distance / day)));
+        this.hours   = this.pad(Math.floor((distance % day) / 36e5));
+        this.minutes = this.pad(Math.floor((distance % 36e5) / 6e4));
+        this.seconds = this.pad(Math.floor((distance % 6e4) / 1000));
+      },
+
+      stop() {
+        clearInterval(this.countdown);
+        Object.assign(this, { days: '00', hours: '00', minutes: '00', seconds: '00' });
+      },
+
+      pad(n) { return String(n).padStart(2, '0'); }
+    };
+  }
+
+  
+  const timer = countdownTimer();
+  timer.start();
+</script>
+
+
+  
+
+  
+</section>
+
+  
+
+  
+  
+    
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="about" class="relative hbb-section blox-markdown  " style="padding: 6rem 0 6rem 0;" >
+ <div class="home-section-bg " >
+   
+ </div>
+  
+
+  
+
+    
+
+
+
+
+
+
+
+
+
+<div class="flex flex-col items-center max-w-prose mx-auto gap-3 justify-center px-6">
+
+  <div class="mb-6 text-3xl font-bold text-gray-900 dark:text-white">
+    Introduction
+  </div>
+
+  
+  <div class="prose prose-slate lg:prose-xl dark:prose-invert max-w-prose"><p>The rapid progress of <strong>quantum computing</strong> threatens many classical cryptographic schemes—including RSA and ECC—making the shift to <strong>post-quantum cryptography (PQC)</strong> urgent.<br>
+This hands-on tutorial walks you through designing and implementing a secure <strong>post-quantum RISC-V IoT platform</strong> on an FPGA.</p>
+<p>Key features include:</p>
+<ul>
+<li><strong>CRYSTALS-Dilithium 3</strong> digital-signature acceleration via hardware–software co-design</li>
+<li>An open, extensible <strong>RISC-V</strong> architecture that easily embeds custom PQC accelerators</li>
+<li>Full <strong>FPGA prototyping</strong>, giving you practical experience in building and optimizing secure embedded systems for a post-quantum world</li>
+</ul>
+<p>We begin with an overview of <strong>lattice-based PQC</strong>, focusing on CRYSTALS-Dilithium 3—its architecture, security properties, and the computational, memory, and power demands it places on IoT devices. You’ll see how offloading compute-intensive operations to dedicated hardware drastically improves performance while balancing flexibility, resource usage, and throughput.</p>
+<p>Following the theory, you’ll complete a step-by-step, live FPGA build:</p>
+<ol>
+<li><strong>RISC-V core</strong> enhanced with a custom PQC accelerator</li>
+<li>Integration with a <strong>LoRa</strong> module for low-power, long-range IoT connectivity</li>
+<li>End-to-end FPGA workflow—HDL coding, block-design creation, synthesis, implementation, and bitstream generation</li>
+<li>Real-time demonstration and evaluation of the finished system</li>
+</ol>
+<p>To broaden your perspective, we will also briefly showcase our <strong>GPU-based lattice-PQC prototypes</strong>, outlining their design choices and performance metrics. Throughout the session, interactive discussions and live demos will give you deep insights into architectural design, hardware–software partitioning, and optimization techniques for resource-constrained, secure embedded platforms.</p>
+<blockquote>
+<p><strong>Why this matters:</strong> Bridging the gap between cutting-edge PQC algorithms and real-world IoT deployments equips you to build the secure systems tomorrow’s connected devices will rely on.</p>
+</blockquote>
+</div>
+</div>
+
+
+  
+
+  
+</section>
+
+  
+
+  
+  
+    
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="section-markdown" class="relative hbb-section blox-markdown  bg-gray-100 dark:bg-gray-900" style="padding: 6rem 0 6rem 0;" >
+ <div class="home-section-bg " >
+   
+ </div>
+  
+
+  
+
+    
+
+
+
+
+
+
+
+
+
+<div class="flex flex-col items-center max-w-prose mx-auto gap-3 justify-center px-6">
+
+  <div class="mb-6 text-3xl font-bold text-gray-900 dark:text-white">
+    Objectives
+  </div>
+
+  
+  <div class="prose prose-slate lg:prose-xl dark:prose-invert max-w-prose"><p>By the end of the tutorial you will be able to:</p>
+<ul>
+<li><strong>Explain</strong> the architecture and resource demands of <strong>CRYSTALS-Dilithium 3</strong></li>
+<li><strong>Apply</strong> performance-tuning techniques for PQC on constrained embedded platforms</li>
+<li><strong>Implement</strong> hardware–software co-design flows on an <strong>FPGA</strong></li>
+<li><strong>Develop</strong> secure embedded systems on <strong>RISC-V</strong>–based FPGAs</li>
+<li><strong>Build</strong> and evaluate a post-quantum-secure <strong>IoT platform</strong></li>
+<li><strong>Transfer</strong> these skills to future post-quantum embedded and IoT projects</li>
+</ul></div>
+</div>
+
+
+  
+
+  
+</section>
+
+  
+
+  
+  
+    
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="speakers" class="relative hbb-section blox-people  " style="padding: 6rem 0 6rem 0;" >
+ <div class="home-section-bg " >
+   
+ </div>
+  
+
+  
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="flex flex-col items-center max-w-prose mx-auto gap-3 justify-center">
+
+  <div class="mb-6 text-3xl font-bold text-gray-900 dark:text-white">
+    Speakers
+  </div>
+
+  
+</div>
+
+<div class="mx-auto container max-w-6xl">
+
+  <div class="mt-14 grid grid-cols-1 items-start gap-x-8 gap-y-8 sm:mt-16 sm:gap-y-16 lg:mt-24 lg:grid-cols-3">
+    <div class="lg:col-span-3">
+      <div
+        class="grid grid-cols-1 gap-x-8 gap-y-10 ui-not-focus-visible:outline-none sm:grid-cols-2 sm:gap-y-16 md:grid-cols-3">
+
+        
+        
+
+        
+        
+        
+        
+        
+        
+
+        
+
+        
+        
+        
+        
+        
+        
+        
+        <div>
+          <div class="group relative h-[17.5rem] transform overflow-hidden rounded-4xl">
+            <div
+              class="absolute bottom-6 left-0 right-4 top-0 rounded-4xl border transition duration-300 group-hover:scale-95 xl:right-6 border-primary-300"></div>
+            <div class="absolute inset-0 bg-primary-50">
+              
+              
+                
+              
+              
+                
+                <a href="/asiacrypt25/author/ray-cheung/">
+                  <img src="/asiacrypt25/author/ray-cheung/avatar_hu10412406271235485755.webp" alt="Avatar" width="280" height="280" loading="lazy"
+                      class="absolute inset-0 h-full w-full object-cover transition duration-300 group-hover:scale-110"
+                      data-nimg="1"
+                      decoding="async"
+                      fetchpriority="high"
+                      style="color:transparent">
+              
+              </a>
+            </div>
+          </div>
+
+          <h3 class="mt-8 font-display text-xl font-bold tracking-tight text-slate-900 dark:text-slate-100">
+            <a href="/asiacrypt25/author/ray-cheung/">Ray Cheung</a>
+          </h3>
+
+          
+          <p class="mt-1 text-base tracking-tight text-slate-500 dark:text-slate-200">Professor, Department of Electrical Engineering
+
+          |
+            
+              City University of Hong Kong
+            
+          </p>
+          
+
+          
+
+          
+          <div class="text-2xl sm:text-lg pt-2">
+            
+<div class="flex flex-wrap text-neutral-500 dark:text-neutral-300">
+  
+    
+    
+    
+    
+      
+    
+    <a
+      class="pr-2 transition-transform hover:scale-125 hover:text-primary-700 dark:hover:text-primary-400"
+      style="will-change:transform;"
+      href="/asiacrypt25/"
+      
+      aria-label="Envelope"
+    ><svg style="height: 1em;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"/></svg></a>
+  
+    
+    
+    
+    
+      
+    
+    <a
+      class="pr-2 transition-transform hover:scale-125 hover:text-primary-700 dark:hover:text-primary-400"
+      style="will-change:transform;"
+      href="https://www.linkedin.com/in/ray-cheung-699417"
+      target="_blank" rel="noopener" rel="me noopener noreferrer"
+      aria-label="Brands/Linkedin"
+    ><svg style="height: 1em;" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg></a>
+  
+    
+    
+    
+    
+      
+    
+    <a
+      class="pr-2 transition-transform hover:scale-125 hover:text-primary-700 dark:hover:text-primary-400"
+      style="will-change:transform;"
+      href="/asiacrypt25/"
+      
+      aria-label="Brands/Orcid"
+    ><svg style="height: 1em;" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 512 512"><path d="M336.62 194.538c-7.13-3.328-13.866-5.56-20.253-6.614-6.365-1.095-16.574-1.612-30.71-1.612h-36.704v152.747h37.634c14.673 0 26.081-1.013 34.224-3.017 8.142-2.004 14.921-4.526 20.356-7.626a69.448 69.448 0 0 0 14.942-11.388c14.488-14.714 21.742-33.273 21.742-55.717 0-22.052-7.44-40.052-22.341-53.982-5.498-5.166-11.822-9.444-18.89-12.793zM256 8C119.022 8 8 119.042 8 256s111.022 248 248 248 248-111.042 248-248S392.978 8 256 8Zm-82.336 357.513h-29.389V160.148h29.389zM158.95 138.696c-11.14 0-20.213-9.01-20.213-20.212 0-11.118 9.052-20.191 20.213-20.191 11.18 0 20.232 9.052 20.232 20.191a20.194 20.194 0 0 1-20.232 20.212zm241.386 163.597c-5.29 12.545-12.834 23.581-22.65 33.088-9.982 9.837-21.597 17.194-34.844 22.196-7.75 3.017-14.839 5.063-21.307 6.117-6.49 1.013-18.828 1.509-37.076 1.509h-64.956V160.148h69.233c27.962 0 50.034 4.154 66.32 12.545 16.265 8.37 29.181 20.728 38.792 36.972 9.61 16.265 14.425 34.018 14.425 53.196.023 13.765-2.666 26.908-7.936 39.432z" style="stroke-width:.07717"/></svg></a>
+  
+</div>
+
+
+          </div>
+          
+
+          </div>
+
+    
+    
+      </div>
+    </div>
+  </div>
+
+
+
+</div>
+
+
+  
+
+  
+</section>
+
+  
+
+  
+  
+    
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="agenda" class="relative hbb-section blox-markdown  " style="padding: 6rem 0 6rem 0;" >
+ <div class="home-section-bg " >
+   
+ </div>
+  
+
+  
+
+    
+
+
+
+
+
+
+
+
+
+<div class="flex flex-col items-center max-w-prose mx-auto gap-3 justify-center px-6">
+
+  <div class="mb-6 text-3xl font-bold text-gray-900 dark:text-white">
+    Agenda (Proposed)
+  </div>
+
+  
+  <div class="prose prose-slate lg:prose-xl dark:prose-invert max-w-prose">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table class="table-auto w-full">
+  
+    
+    
+    <thead>
+      <tr>  <th class="border-b dark:border-slate-600 font-medium p-4 pt-0 pb-3 text-slate-400 dark:text-slate-200 text-left">Time</th>  <th class="border-b dark:border-slate-600 font-medium p-4 pt-0 pb-3 text-slate-400 dark:text-slate-200 text-left">Event</th>  </tr>
+    </thead>
+  
+  <tbody>
+  
+    <tr>
+      
+        
+          <td data-table-dtype="text" class="border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400">14:00</td>
+        
+      
+        
+          <td data-table-dtype="text" class="border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400">Introduction to Lattice-Based PQC and CRYSTALS-Dilithium 3</td>
+        
+      
+    </tr>
+  
+    <tr>
+      
+        
+          <td data-table-dtype="text" class="border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400">14:20</td>
+        
+      
+        
+          <td data-table-dtype="text" class="border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400">Hardware-Software Co-Design Development on FPGA</td>
+        
+      
+    </tr>
+  
+    <tr>
+      
+        
+          <td data-table-dtype="text" class="border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400">14:40</td>
+        
+      
+        
+          <td data-table-dtype="text" class="border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400">RISC-V Core Development on FPGA</td>
+        
+      
+    </tr>
+  
+    <tr>
+      
+        
+          <td data-table-dtype="text" class="border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400">15:10</td>
+        
+      
+        
+          <td data-table-dtype="text" class="border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400">Secure PQC RISC-V IoT Platform FPGA Development and Demonstration</td>
+        
+      
+    </tr>
+  
+    <tr>
+      
+        
+          <td data-table-dtype="text" class="border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400">15:20</td>
+        
+      
+        
+          <td data-table-dtype="text" class="border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400">Lora Integration to the Secure PQC RISC-V IoT Platform</td>
+        
+      
+    </tr>
+  
+    <tr>
+      
+        
+          <td data-table-dtype="text" class="border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400">15:40</td>
+        
+      
+        
+          <td data-table-dtype="text" class="border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400">TBD</td>
+        
+      
+    </tr>
+  
+  </tbody>
+  
+</table>
+
+</div>
+</div>
+
+
+  
+
+  
+</section>
+
+  
+
+  
+  
+    
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="section-logos" class="relative hbb-section blox-logos  " style="padding: 6rem 0 6rem 0;" >
+ <div class="home-section-bg " >
+   
+ </div>
+  
+
+  
+
+    
+
+
+
+
+
+
+
+
+<section class="py-20 sm:py-32">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    
+    <h2
+    class="mx-auto max-w-2xl text-center font-display text-4xl font-medium tracking-tighter text-primary-900 dark:text-primary-300 sm:text-5xl">
+      Sponsors</h2>
+    
+    
+    <p class="text-xl text-center my-5">TBA</p>
+    
+    <div
+      class="mx-auto mt-20 grid max-w-max grid-cols-1 place-content-center gap-x-32 gap-y-12 sm:grid-cols-3 md:gap-x-16 lg:gap-x-32">
+      
+      
+    </div>
+  </div>
+</section>
+
+
+  
+
+  
+</section>
+
+  
+
+
+    </div>
+    <div class="page-footer">
+      <footer class="container mx-auto flex flex-col justify-items-center text-sm leading-6 mt-24 mb-4 text-slate-700 dark:text-slate-200">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  <footer aria-labelledby="footer-heading">
+  <span id="footer-heading" class="sr-only">Footer</span>
+
+  <div class="px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:px-16">
+    <div class="xl:grid xl:grid-cols-3 xl:gap-8">
+      <div class="text-white xl:col-span-1">
+        <a class="text-lg font-bold tracking-tighter text-primary-600 dark:text-primary-200 transition duration-500 ease-in-out transform tracking-relaxed lg:pr-8" href="/asiacrypt25/">
+          Asiacrypt 2025 Workshop
+        </a>
+        <p class="w-1/2 mt-2 text-sm text-gray-500 dark:text-gray-300">Secure Post-Quantum Cryptography RISC-V IoT Platform Implementation and Demonstration on FPGA</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-1 gap-8 mt-12 xl:mt-0 xl:col-span-2">
+
+          
+          
+          <div>
+            <h3 class="text-sm font-bold tracking-wider text-primary-500 dark:text-primary-300 uppercase">Home</h3>
+            <ul role="list" class="mt-4 space-y-2">
+              
+              
+              <li>
+                <a href="/asiacrypt25/"
+                class="text-base font-normal text-gray-500 hover:text-primary-600 dark:text-gray-300 dark:hover:text-primary-300"
+                   
+                   >
+                  Home
+                </a>
+              </li>
+              
+            </ul>
+          </div>
+        
+      </div>
+    </div>
+  </div>
+  <div class="px-4 py-12 mx-auto bg-transparent dark:bg-transparent max-w-7xl sm:px-6 lg:px-16">
+    <div class="flex flex-wrap items-baseline">
+      <span class="mt-2 text-sm font-light text-gray-500 dark:text-gray-300">
+        
+        
+
+
+
+
+
+
+  
+  <p class="powered-by text-center">
+    © 2025 CALAS
+  </p>
+  
+
+
+
+      </span>
+    </div>
+  </div>
+</footer>
+
+
+  <p class="powered-by text-center">
+    
+    
+    
+  </p>
+
+</footer>
+
+    </div>
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

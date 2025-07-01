@@ -1,0 +1,91 @@
+{{/* Hugo Blox: Countdown */}}
+{{/* Documentation: https://hugoblox.com/blocks/ */}}
+{{/* License: All Access Pass Required - https://hugoblox.com/sponsor/ */}}
+
+{{/* Initialise */}}
+{{ $page := .wcPage }}
+{{ $block := .wcBlock }}
+{{ $mydate := $block.content.date | default "2000-01-01" }}
+{{ $formattedDate := dateFormat "2006-01-02T15:04:05.000Z" $mydate }}
+
+<div class="min-w-screen flex items-center justify-center px-5 py-5" x-data="countdownTimer()" x-init="start()" id="countdown" data-countdown-date="{{$formattedDate}}">
+  <div class="text-primary-100">
+    {{ with $block.content.title }}
+    <h1 class="text-3xl text-center mb-3 font-extralight">{{ . | markdownify }}</h1>
+    {{end}}
+    {{ with $block.content.text }}
+    <p class="text-xl text-center my-5">{{ . | markdownify }}</p>
+    {{end}}
+    <div class="text-6xl text-center flex w-full items-center justify-center">
+      <div class="text-2xl mr-1 font-extralight"></div>
+      <div class="w-23 mx-1 p-2 bg-white text-primary-500 rounded-lg">
+        <div class="font-mono leading-none" x-text="days">00</div>
+        <div class="font-mono uppercase text-sm leading-none">{{ T "days" | default "Days" }}</div>
+      </div>
+      <div class="w-23 mx-1 p-2 bg-white text-primary-500 rounded-lg">
+        <div class="font-mono leading-none" x-text="hours">00</div>
+        <div class="font-mono uppercase text-sm leading-none">{{ T "hours" | default "Hours" }}</div>
+      </div>
+      <div class="w-23 mx-1 p-2 bg-white text-primary-500 rounded-lg">
+        <div class="font-mono leading-none" x-text="minutes">00</div>
+        <div class="font-mono uppercase text-sm leading-none">{{ T "minutes" | default "Minutes" }}</div>
+      </div>
+      <div class="w-23 mx-1 p-2 bg-white text-primary-500 rounded-lg">
+        <div class="font-mono leading-none" x-text="seconds">00</div>
+        <div class="font-mono uppercase text-sm leading-none">{{ T "seconds" | default "Seconds" }}</div>
+      </div>
+    </div>
+    {{ with $block.content.text_after }}
+    <p class="text-sm text-center mt-3">
+      {{ . | markdownify }}
+    </p>
+    {{end}}
+  </div>
+</div>
+
+<script>
+  // Pass the <div id="countdown" data-countdown-date="2025-12-25T00:00:00"></div>
+  function countdownTimer() {
+    const el = document.querySelector('#countdown');
+    let targetISO = el.dataset.countdownDate;
+
+    // Demo sentinel → one week from now
+    if (targetISO === '2000-01-01T00:00:00.000Z') {
+      targetISO = new Date(Date.now() + 7 * 864e5).toISOString();
+    }
+
+    const eventTime = new Date(targetISO).getTime();   // local-midnight by design
+    const day      = 864e5;                            // ms in a day
+
+    return {
+      days: '00', hours: '00', minutes: '00', seconds: '00',
+      countdown: null,
+
+      start() {
+        this.update();                                 // paint immediately
+        this.countdown = setInterval(this.update.bind(this), 1000);
+      },
+
+      update() {
+        const distance = eventTime - Date.now();
+        if (distance <= 0) return this.stop();
+
+        this.days    = this.pad(Math.max(0, Math.floor(distance / day)));
+        this.hours   = this.pad(Math.floor((distance % day) / 36e5));
+        this.minutes = this.pad(Math.floor((distance % 36e5) / 6e4));
+        this.seconds = this.pad(Math.floor((distance % 6e4) / 1000));
+      },
+
+      stop() {
+        clearInterval(this.countdown);
+        Object.assign(this, { days: '00', hours: '00', minutes: '00', seconds: '00' });
+      },
+
+      pad(n) { return String(n).padStart(2, '0'); }
+    };
+  }
+
+  // example usage
+  const timer = countdownTimer();
+  timer.start();
+</script>
