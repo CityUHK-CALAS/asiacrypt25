@@ -10,9 +10,9 @@ design:
 sections:
   - block: hero-with-stats
     content:
-      title: Asiacrypt 2025 Workshop
-      text: "**Secure Post-Quantum Cryptography RISC-V IoT Platform Implementation and Demonstration on FPGA**"
-      details: "December 8th, 2025"
+      title: "Asiacrypt 2025 Tutorial"
+      text: "<div style='text-align: center; font-size: 2.5rem; font-weight: bold; margin-bottom: 1rem; line-height: 1.4;'>Secure Post-Quantum Cryptography RISC-V IoT Platform Implementation and Demonstration on FPGA</div> <div style='text-align: center;'>Presented by <br> CityUHK Architecture Lab for Arithmetic and Security (CALAS) <br>Department of Electrical Engineering, City University of Hong Kong</div>"
+      details: " <div style='text-align: center;'>December 8th, 2025</div>"
       primary_action:
         text: Register Now
         url: https://asiacrypt.iacr.org/2025/registration.php
@@ -112,16 +112,53 @@ sections:
     design:
       # Section background color (CSS class)
       css_class: "bg-gray-100 dark:bg-gray-900"
-  - block: people
+  # - block: people
+  #   id: speakers
+  #   content:
+  #     title: Speakers
+  #     text: ""
+  #     user_groups: ['Speakers']
+  #   design:
+  #     show_role: true
+  #     show_social: true
+  #     show_interests: false
+  - block: markdown
     id: speakers
     content:
       title: Speakers
-      text: ""
-      user_groups: ['Speakers']
-    design:
-      show_role: true
-      show_social: true
-      show_interests: false
+      text: |
+        ### Prof. Ray C. C. Cheung (Team Lead)
+        **Professor**  
+        Department of Electrical Engineering  
+        City University of Hong Kong  
+        
+        ### Prof. Patrick S. Y. HUNG
+        **Adjunct Professor**  
+        Department of Electrical Engineering  
+        City University of Hong Kong
+
+        ### Dr. Abdurrashid Ibrahim SANKA
+        **Post-doctoral Fellow**  
+        Department of Electrical Engineering   
+        City University of Hong Kong
+
+        ### Dr. Hao YANG
+        **Post-doctoral Fellow**  
+        Department of Electrical Engineering   
+        City University of Hong Kong
+
+        ### Dr. Sherie Shiyu SHEN
+        **Post-doctoral Fellow**  
+        Department of Electrical Engineering   
+        City University of Hong Kong
+
+        ### Jeffrey HONG 
+        Department of Electrical Engineering   
+        City University of Hong Kong
+
+        ### Alex ZHANG 
+        Department of Electrical Engineering   
+        City University of Hong Kong
   - block: markdown
     id: agenda
     content:
@@ -143,6 +180,18 @@ sections:
   #     spacing:
   #       # Reduce bottom spacing so the testimonial appears vertically centered between sections
   #       padding: ["6rem", 0, 0, 0]
+  - block: logos
+    content:
+      title: "Organizers"
+      text: ""
+      # Image path relative to assets/media/ folder
+      logo_folder: 'organizers/'
+    design:
+      card:
+        # Card background color (CSS class)
+        css_class: "bg-primary-700"
+        css_style: ""
+
   - block: logos
     content:
       title: "Sponsors"
