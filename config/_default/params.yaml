@@ -49,7 +49,7 @@ footer:
   blox: "sitemap"
   content:
     logo:
-      text: "Asiacrypt 2025 Workshop"
+      text: "Asiacrypt 2025 Tutorial"
     tagline: "Secure Post-Quantum Cryptography RISC-V IoT Platform Implementation and Demonstration on FPGA"
   design:
     columns: 1

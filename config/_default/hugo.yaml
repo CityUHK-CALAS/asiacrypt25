@@ -3,7 +3,7 @@
 # Hugo Documentation: https://gohugo.io/getting-started/configuration/#all-configuration-settings
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
-title: The 1st Workshop on Secure Post-Quantum Cryptography RISC-V IoT Platform Implementation and Demonstration on FPGA # Website name
+title: Tutorial on Secure Post-Quantum Cryptography RISC-V IoT Platform Implementation and Demonstration on FPGA # Website name
 baseURL: 'https://cityuhk-calas.github.io/asiacrypt25' # Website URL
 
 ############################
