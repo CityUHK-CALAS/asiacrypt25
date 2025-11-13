@@ -19,7 +19,7 @@ sections:
         icon:
       items:
         - name: "Speakers"
-          description: "TBD"
+          description: "Prof. Ray C. C. Cheung, Prof. Patrick S. Y. HUNG"
         - name: "Attendees"
           description: "TBD"
         - name: "Venue"
@@ -61,11 +61,11 @@ sections:
 
         Key features include:
 
-        * **CRYSTALS-Dilithium 3** digital-signature acceleration via hardware–software co-design  
+        * **CRYSTALS-Dilithium/Kyber** digital-signature acceleration via hardware–software co-design  
         * An open, extensible **RISC-V** architecture that easily embeds custom PQC accelerators  
         * Full **FPGA prototyping**, giving you practical experience in building and optimizing secure embedded systems for a post-quantum world  
 
-        We begin with an overview of **lattice-based PQC**, focusing on CRYSTALS-Dilithium 3—its architecture, security properties, and the computational, memory, and power demands it places on IoT devices. You’ll see how offloading compute-intensive operations to dedicated hardware drastically improves performance while balancing flexibility, resource usage, and throughput.
+        We begin with an overview of **lattice-based PQC**, focusing on CRYSTALS-Dilithium/Kyber and its architecture, security properties, and the computational, memory, and power demands it places on IoT devices. You’ll see how offloading compute-intensive operations to dedicated hardware drastically improves performance while balancing flexibility, resource usage, and throughput.
 
         Following the theory, you’ll complete a step-by-step, live FPGA build:
 
@@ -84,7 +84,7 @@ sections:
       text: |
         By the end of the tutorial you will be able to:
 
-        - **Explain** the architecture and resource demands of **CRYSTALS-Dilithium 3**
+        - **Explain** the architecture and resource demands of **CRYSTALS-Dilithium/Kyber**
         - **Apply** performance-tuning techniques for PQC on constrained embedded platforms
         - **Implement** hardware–software co-design flows on an **FPGA**
         - **Develop** secure embedded systems on **RISC-V**–based FPGAs
@@ -156,13 +156,10 @@ sections:
         Department of Electrical Engineering   
         City University of Hong Kong
 
-        ### Alex ZHANG 
-        Department of Electrical Engineering   
-        City University of Hong Kong
   - block: markdown
     id: agenda
     content:
-      title: Agenda (Proposed)
+      title: Agenda
       text: |
         {style="padding-top: 2rem"}
         {{< table path="schedule.csv" header="true" >}}
