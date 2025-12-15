@@ -23,7 +23,7 @@ sections:
         - name: "Attendees"
           description: "TBD"
         - name: "Venue"
-          description: "Woodside Building, Clayton Campus of Monash University"
+          description: "Monash College City Campus, 750 Collins Street, Docklands VIC 3008"
         - name: "Location"
           description: "Melbourne, Australia"
     design:
